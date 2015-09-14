@@ -1,6 +1,6 @@
 var request = require("request");
 var parseString = require("xml2js").parseString;
-var _url = "https://hooks.slack.com/services/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";
+var _url = "YOUR SLACK URL HERE";
 
 
 //var _data = {
@@ -41,7 +41,7 @@ request
                 //                            //                console.log("Published : ", v.pubDate[0]);
                 if (i === 10) {
                     var _data = {
-                        "text": "Top Stories from CNN", "attachments": _attachments, "channel":"@lionata"
+                        "text": "Top Stories from CNN", "attachments": _attachments, "channel":"@awamahiu"
                     };
                     request.post({
                         url: _url,
